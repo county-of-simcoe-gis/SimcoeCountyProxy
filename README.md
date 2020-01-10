@@ -2,6 +2,8 @@
 
 If you currently don't have anything to manage all your node websites, I recommend you use this or something similar.
 
+Please visit our deployment guide for full details: https://github.com/county-of-simcoe-gis/SimcoeCountyDeploymentGuide
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
