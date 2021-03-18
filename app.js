@@ -3,6 +3,8 @@ const path = require('path');
 let app = express();
 const rateLimit = require('express-rate-limit');
 const slowDown = require("express-slow-down");
+const compression = require('compression');
+
 var fs = require("fs");
 var http = require('http');
 var https = require('https');
@@ -31,7 +33,9 @@ const limit = rateLimit({
 
 app.use(speedLimiter);
 app.options('*', cors());
-app.use(helmet());
+app.use(compression());
+
+//app.use(helmet());
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
